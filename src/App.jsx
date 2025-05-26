@@ -18,6 +18,7 @@ function App() {
 
   return (
     <>
+    <div className="main-container">
       <h1>Joki</h1>
       {loading ? (
         <p>Lādējas...</p>
@@ -26,6 +27,7 @@ function App() {
           return <Joke key={joke.id} {...joke} />;
         })
       )}
+    </div>
     </>
   )
 }

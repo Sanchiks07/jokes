@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     async function fetchJokes() {
-      const response = await fetch("https://official-joke-api.appspot.com/jokes/random/10");
+      const response = await fetch("http://127.0.0.1:8000/api/jokes");
       const jokesFromAPI = await response.json();
       setJokes(jokesFromAPI);
       setLoading(false);
